@@ -1,0 +1,309 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  /* Header and Navigation */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo a i {
+    margin-right: 0.5rem;
+  }
+  
+  nav ul {
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 1.5rem;
+  }
+  
+  nav ul li a {
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ccc;
+  }
+  
+  /* About Section */
+  .about {
+    display: flex;
+    align-items: center;
+    padding: 5rem 3rem;
+  }
+  
+  .profile-image {
+    flex: 0 0 300px;
+    margin-right: 3rem;
+  }
+  
+  .profile-image img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  .about-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Skills Section */
+  .skills {
+    background-color: #f5f5f5;
+    padding: 5rem 3rem;
+  }
+  
+  .skills h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+  }
+  
+  .skill-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 2rem;
+  }
+  
+  .skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .skill-item img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Projects Section */
+  .projects {
+    padding: 5rem 3rem;
+  }
+  
+  .projects h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+  }
+  
+  .project-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 3rem;
+  }
+  
+  .project-item {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .project-item h3 {
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+  }
+  
+  .project-item p {
+    margin-top: 1rem;
+    padding: 0 1.5rem;
+  }
+  
+  .project-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .project-links a {
+    display: flex;
+    align-items: center;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .project-links a:hover {
+    color: #666;
+  }
+  
+  .project-links a i {
+    margin-right: 0.5rem;
+  }
+  
+  /* Recommendations Section */
+  .recommendations {
+    background-color: #f5f5f5;
+    padding: 5rem 3rem;
+  }
+  
+  .recommendations h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+  }
+  
+  .recommendation-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 3rem;
+  }
+  
+  .recommendation-item {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-recommendation {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  
+  .add-recommendation input {
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 400px;
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+  
+  .add-recommendation button {
+    padding: 0.75rem 1.5rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-recommendation button:hover {
+    background-color: #555;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-links {
+    margin-top: 1rem;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #ccc;
+  }
+  /* Theme Switching */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .dark-mode .skills {
+    background-color: #444;
+  }
+  
+  .dark-mode .project-item,
+  .dark-mode .recommendation-item {
+    background-color: #444;
+    color: #fff;
+  }
+  
+  .dark-mode nav ul li a:hover {
+    color: #ccc;
+  }
+  
+  #theme-toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 1rem;
+  }
+  
+  #theme-toggle i {
+    font-size: 1.5rem;
+  }
+  
+  /* Confirmation Popup */
+  .confirmation-popup {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 200;
+  }
+  
+  .confirmation-popup.show {
+    opacity: 1;
+  }
